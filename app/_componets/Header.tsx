@@ -10,6 +10,7 @@ import CartApis from "../_utlis/CartApis";
 import Cart from "./Cart";
 
 function Header() {
+    const [toggle,setToggle]= useState(false)
     const [isopen, setisopen] = useState(false);
     const { cart, setCart }: any = useContext(Cartcontext);
     const getCartItems = () => {
@@ -168,7 +169,7 @@ function Header() {
                                 </div>
                             )}
                             <div className="block md:hidden">
-                                <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+                                <button onClick={()=>setToggle(!toggle)} className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         className="h-5 w-5"
@@ -185,6 +186,53 @@ function Header() {
                                     </svg>
                                 </button>
                             </div>
+                            {toggle ? <nav aria-label="Global" className="absolute bg-[#ffffff66] md:hidden rounded-md p-6 top-14 left-0 h-[100vh] ">
+                                <ul className=" gap-6 text-md font-semibold">
+                                    <li>
+                                        <a
+                                            className="text-gray-800 transition hover:text-gray-800/75"
+                                            href="/"
+                                        >
+
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            className="text-gray-800 transition hover:text-gray-800/75"
+                                            href="/AllCourses"
+                                        >
+                                            Courses
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            className="text-gray-800 transition hover:text-gray-800/75"
+                                            href="/cart"
+                                        >
+                                            MyCart
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            className="text-gray-800 transition hover:text-gray-800/75"
+                                            href="/Aboutus"
+                                        >
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            className="text-gray-800 transition hover:text-gray-800/75"
+                                            href="/Contact"
+                                        >
+                                            Contact
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </nav>:<></>}
                         </div>
                     </div>
                 </div>
