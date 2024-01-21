@@ -42,7 +42,7 @@ export default function Page() {
     <main
       className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6"
     >
-      <div className="max-w-xl lg:max-w-3xl">
+          <div className="max-w-xl  flex flex-col  items-center justify-center lg:max-w-3xl">
         <div className="relative -mt-16 block lg:hidden">
           <a
             className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white text-blue-600 sm:h-20 sm:w-20"
