@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
     return (
-        <section className="relative overflow-hidden dark:bg-gray-900 font-poppins">
+        <section className="relative overflow-hidden h-[100%] md:h-[95vh] dark:bg-gray-900 font-poppins">
             <div className="absolute bottom-0 left-0 hidden w-full h-full lg:block lg:w-4/12">
                 <img
                     className="object-cover w-full h-full"

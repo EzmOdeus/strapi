@@ -6,7 +6,7 @@ function Hero() {
             <div className="container px-4 mx-auto mt-12">
                 <div className="flex flex-wrap items-center -mx-4">
                     <div className="w-auto px-4 mb-4 text-center ">
-                      
+
                     </div>
                     <div className="w-full px-4 lg:w-2/5">
                         <div className=" lg:max-w-xl">
@@ -22,9 +22,9 @@ function Hero() {
                             </p>
                             <a
                                 className="inline-block w-full px-6 py-4 mb-2 text-lg font-medium leading-6 text-center text-white transition duration-200 bg-red-600 rounded shadow dark:bg-red-500 dark:hover:bg-red-700 md:w-auto md:mb-0 md:mr-4 hover:bg-red-700"
-                                href="#"
+                                href="/AllCourses"
                             >
-                              See All Courses
+                                See All Courses
                             </a>
                         </div>
                     </div>
@@ -57,13 +57,13 @@ function Hero() {
                         </div>
                     </div>
                     <div className="w-auto px-4 mb-4 text-center xl:mb-0">
-                      
+
                     </div>
                 </div>
             </div>
         </section>
 
-      
+
     )
 }
 
