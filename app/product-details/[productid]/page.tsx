@@ -3,7 +3,7 @@ import ProductApis from '@/app/_utlis/ProductApis'
 import React, { useEffect, useState } from 'react'
 import Productinfo from '../../_componets/Productinfo';
 import ProductsList from "../../_componets/ProductsList";
-function page({ params }: any) {
+function Page({ params }: any) {
   const [Prod, setProd]: any = useState({})
   const [ProdList, setProdList] = useState([])
   useEffect(() => {
@@ -74,4 +74,4 @@ function page({ params }: any) {
 
 }
 
-export default page
+export default Page

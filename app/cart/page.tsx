@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 
-function page() {
+function Page() {
     const router = useRouter()
     const { cart, setCart }: any = useContext(Cartcontext)
     const total = () => {
@@ -155,4 +155,4 @@ function page() {
     )
 }
 
-export default page
+export default Page

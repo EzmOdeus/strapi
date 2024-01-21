@@ -5,7 +5,7 @@ import ProductApis from '../_utlis/ProductApis'
 import ProductsList from './ProductsList';
 import Link from "next/link";
 
-function products() {
+function Products() {
   const [ProductList, setProductList] = useState([])
 
   useEffect(() => {
@@ -56,4 +56,4 @@ function products() {
   )
 }
 
-export default products
+export default Products
