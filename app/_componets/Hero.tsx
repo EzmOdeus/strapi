@@ -2,38 +2,68 @@ import React from 'react'
 
 function Hero() {
     return (
-        <section className="relative pb-8 " style={{ height: 750 }}>
-            <div > 
-                <img
-                    src="/hero.png"
-                    className=" rounded-[5%] absolute top-0 bottom-0 left-0 right-0 object-cover w-full h-full"
-                    alt=""
-                />
-                <div className="absolute top-0 bottom-0 left-0 right-0 flex items-center rounded-[5%] bg-[#303030bf]">
-                    <div className="z-10 max-w-6xl px-4 mx-auto ">
-                        <span className="text-sm font-semibold bg-white p-3 rounded-lg text-blue-400 uppercase">
-                            Never stop learning
-                        </span>
-                        <h2 className="mt-2 mb-4 text-3xl font-bold leading-tight text-white md:text-4xl md:leading-tight lg:text-7xl lg:leading-tight g">
-                            Grow up your skills
-                        </h2>
-                        <p className="mb-8 text-base  leading-8 text-gray-400 lg:text-2xl">
-                            By online courses with Spider-Courses
-                        </p>
-                        <div className="items-center justify-start block gap-4 md:flex">
-                        
+        <section className="relative pt-10 overflow-hidden">
+            <div className="container px-4 mx-auto mt-12">
+                <div className="flex flex-wrap items-center -mx-4">
+                    <div className="w-auto px-4 mb-4 text-center ">
+                      
+                    </div>
+                    <div className="w-full px-4 lg:w-2/5">
+                        <div className=" lg:max-w-xl">
+                            <h1 className="mb-6 text-4xl font-bold dark:text-gray-300 lg:text-6xl">
+                                <span>Keep learning and</span>
+                                <span className="text-red-600 dark:text-red-400">Develop</span>
+                                <span>Skills</span>
+                            </h1>
+                            <p className="mb-6 leading-8 text-gray-500 dark:text-gray-400">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.sit amet,
+                                consectetur adipiscing elit, sed do Ut enim ad minim veniam
+                            </p>
                             <a
-                                className="block px-5 py-3 text-sm font-semibold text-center text-blue-700 transition duration-200 bg-white rounded md:inline-block hover:bg-blue-700 hover:text-gray-100"
+                                className="inline-block w-full px-6 py-4 mb-2 text-lg font-medium leading-6 text-center text-white transition duration-200 bg-red-600 rounded shadow dark:bg-red-500 dark:hover:bg-red-700 md:w-auto md:mb-0 md:mr-4 hover:bg-red-700"
                                 href="#"
                             >
-                                {" "}
-                                Get Started{" "}
+                              See All Courses
                             </a>
                         </div>
+                    </div>
+                    <div className="w-full px-4 mt-20 lg:w-2/5 lg:mt-0">
+                        <div className="flex justify-center lg:justify-end">
+                            <div className="mr-4 lg:mr-8">
+                                <img
+                                    className="block object-cover w-full h-32 mx-auto mb-8 rounded-md sm:h-64"
+                                    src="https://i.postimg.cc/PqrSRxDN/pexels-fauxels-3184357.jpg "
+                                    alt=""
+                                />
+                                <img
+                                    className="block object-cover w-full h-32 mx-auto mb-8 rounded-md sm:h-64"
+                                    src="https://i.postimg.cc/90fhB5Hb/pexels-pixabay-38271.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    className="block object-cover w-full h-32 mx-auto mb-8 rounded-md sm:h-64"
+                                    src="https://i.postimg.cc/qM9PNCqj/pexels-vlada-karpovich-4050291.jpg"
+                                    alt=""
+                                />
+                                <img
+                                    className="block object-cover w-full h-32 mx-auto mb-8 rounded-md sm:h-64"
+                                    src="https://i.postimg.cc/qRMYPsDM/pexels-christina-morillo-1181605.jpg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-auto px-4 mb-4 text-center xl:mb-0">
+                      
                     </div>
                 </div>
             </div>
         </section>
+
+      
     )
 }
 
