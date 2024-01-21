@@ -7,7 +7,7 @@ function ProductsList({ ProductList }: any) {
     console.log('-------', ProductList);
     return (
         <div className=' grid grid-cols-1 sm:grid-cols-2 gap-6 md:grid-cols-4 mb-[3rem] '>{ProductList.map((item: any) => {
-            return <Link href={`/product-details/${item.id}`} className="block rounded-lg p-4 shadow-sm  shadow-indigo-100 border hover:border-primary border-md">
+            return <Link key={item?.id} href={`/product-details/${item.id}`} className="block rounded-lg p-4 shadow-sm  shadow-indigo-100 border hover:border-primary border-md">
                 <img
                     alt="Home"
                     src={item?.attributes?.img?.data?.attributes?.url}

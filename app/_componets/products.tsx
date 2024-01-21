@@ -7,10 +7,10 @@ import Link from "next/link";
 
 function products() {
   const [ProductList, setProductList] = useState([])
-  const [vid, setvid] = useState([])
+
   useEffect(() => {
-    getLatestProduct_(),
-      getVid_()
+    getLatestProduct_()
+
   }, [])
   const getLatestProduct_ = () => {
     ProductApis.getLatestProduct().then((res: any) => {
@@ -18,13 +18,7 @@ function products() {
       setProductList(res.data.data)
     })
   }
-  const getVid_ = () => {
-    ProductApis.getallVid().then((res: any) => {
-      // const rrr = res?.data?.data.map(e => e.attributes?.vid?.data?.attributes?.url)
-      console.log('22222222222',res.data.data)
-      setvid(res?.data?.data)
-    })
-  }
+
   return (
 
     <div>
@@ -44,13 +38,7 @@ function products() {
 
         </Link>
       </span>
-      {
-        vid.map((item: any) => {
-          return <video src={item?.attributes?.vid?.data?.attributes?.url}  >
-            <source />
-          </video>
-        })
-     }
+
       <hr className="pb-3" />
       {ProductList.length > 0 ? <ProductsList ProductList={ProductList} />
         : <section className="flex justify-center items-center w-full">
