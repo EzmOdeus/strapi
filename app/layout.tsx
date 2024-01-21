@@ -7,6 +7,7 @@ import Footer from './_componets/Footer'
 import { ClerkProvider } from '@clerk/nextjs'
 import { Cartcontext } from './_context/Cartcontext'
 import { useState } from 'react'
+import { SpeedInsights } from '@vercel/speed-insights/next';
 const inter = Inter({ subsets: ['latin'] })
 
 // export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export default function RootLayout({
     <ClerkProvider>
       <Cartcontext.Provider value={{ cart, setCart }}>
         <html lang="en">
-          <body className={inter.className}><Header />{children}<Footer /></body>
+          <body className={inter.className}><Header />{children}    <SpeedInsights /><Footer /></body>
         </html>
       </Cartcontext.Provider>
     </ClerkProvider>
