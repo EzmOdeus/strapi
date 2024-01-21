@@ -25,7 +25,7 @@ function Products() {
       <p className='text-[100px] font-bold text-center text-[#c6c6c642]'>   Courses</p>
       <p className='text-center mt-[-70px] font-[600] text-[30px] text-gray-400 pb-5'>Let&apos;s start learning</p>
 
-      <span className="relative flex justify-center items-center w-[30%]">
+      <span className="relative flex justify-center items-center ">
         <div
           className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
         >

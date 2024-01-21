@@ -12,12 +12,13 @@
     "@clerk/nextjs": "^4.29.3",
     "@stripe/react-stripe-js": "^2.4.0",
     "@stripe/stripe-js": "^2.3.0",
-    "stripe":"13.2.0",
+    "@vercel/speed-insights": "^1.0.5",
     "axios": "^1.6.5",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-intersection-observer": "^9.5.3"
+    "react-intersection-observer": "^9.5.3",
+    "stripe": "13.2.0"
   },
   "devDependencies": {
     "@types/node": "^20",
