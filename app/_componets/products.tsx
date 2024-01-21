@@ -23,7 +23,7 @@ function Products() {
 
     <div>
       <p className='text-[100px] font-bold text-center text-[#c6c6c642]'>   Courses</p>
-      <p className='text-center mt-[-70px] font-[600] text-[30px] text-gray-400 pb-5'>Let's start learning</p>
+      <p className='text-center mt-[-70px] font-[600] text-[30px] text-gray-400 pb-5'>Let&apos;s start learning</p>
 
       <span className="relative flex justify-center items-center w-[30%]">
         <div
