@@ -12,6 +12,7 @@
     "@clerk/nextjs": "^4.29.3",
     "@stripe/react-stripe-js": "^2.4.0",
     "@stripe/stripe-js": "^2.3.0",
+    "@vercel/analytics": "^1.1.2",
     "@vercel/speed-insights": "^1.0.5",
     "axios": "^1.6.5",
     "next": "14.0.4",

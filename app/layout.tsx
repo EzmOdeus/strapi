@@ -1,5 +1,6 @@
 'use client'
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react';
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from './_componets/Header'
@@ -25,7 +26,10 @@ export default function RootLayout({
     <ClerkProvider>
       <Cartcontext.Provider value={{ cart, setCart }}>
         <html lang="en">
-          <body className={inter.className}><Header />{children}    <SpeedInsights /><Footer /></body>
+          <body className={inter.className}><Header />{children}
+            <Analytics />
+            <SpeedInsights />
+            <Footer /></body>
         </html>
       </Cartcontext.Provider>
     </ClerkProvider>
