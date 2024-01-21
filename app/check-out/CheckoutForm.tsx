@@ -48,7 +48,7 @@ const CheckOutForm = ({ amount }: any) => {
             //`Elements` instance that was used to create the Payment Element
             elements,
             confirmParams: {
-                return_url: "http://localhost:3000",
+                return_url: `http://localhost:3000/Thanksorder?total=${amount}`,
             },
         });
 
@@ -58,7 +58,7 @@ const CheckOutForm = ({ amount }: any) => {
         } else {
             // Your customer will be redirected to your `return_url`. For some payment
             // methods like iDEAL, your customer will be redirected to an intermediate
-            // site first to authorize the payment, then redirected to the `return_url`.
+            // site first to authorize the payment, then redirected to the `return_url`
         }
     };
     const createOrder = () => {
@@ -85,9 +85,11 @@ const CheckOutForm = ({ amount }: any) => {
         })
     }
     return (
-        <form className='p-10 mt-2' onSubmit={handleSubmit}>
-            <PaymentElement />
-            <button>Submit</button>
+        <form className=' h-screen p-[10%] flex justify-center items-center' onSubmit={handleSubmit}>
+            <div className="shadow-2xl  flex flex-col justify-center items-center rounded-xl p-10 lg:w-[50%]">
+                <PaymentElement  className='w-[100%]'/>
+                <button className='bg-primary text-white p-2 w-40 mt-2 items-center rounded-xl'  >Submit</button>
+           </div>
         </form>
     );
 }

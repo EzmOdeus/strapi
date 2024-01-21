@@ -10,18 +10,18 @@ function Hero() {
                     </div>
                     <div className="w-full px-4 lg:w-2/5">
                         <div className=" lg:max-w-xl">
-                            <h1 className="mb-6 text-4xl font-bold dark:text-gray-300 lg:text-6xl">
+                            <h1 className="mb-6 text-4xl font-bold  lg:text-6xl">
                                 <span>Keep learning and</span>
-                                <span className="text-red-600 dark:text-red-400">Develop</span>
+                                <span className="text-red-600 ">Develop</span>
                                 <span>Skills</span>
                             </h1>
-                            <p className="mb-6 leading-8 text-gray-500 dark:text-gray-400">
+                            <p className="mb-6 leading-8 text-gray-500">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua.sit amet,
                                 consectetur adipiscing elit, sed do Ut enim ad minim veniam
                             </p>
                             <a
-                                className="inline-block w-full px-6 py-4 mb-2 text-lg font-medium leading-6 text-center text-white transition duration-200 bg-red-600 rounded shadow dark:bg-red-500 dark:hover:bg-red-700 md:w-auto md:mb-0 md:mr-4 hover:bg-red-700"
+                                className="inline-block w-full px-6 py-4 mb-2 text-lg font-medium leading-6 text-center text-white transition duration-200 bg-red-600 rounded shadow md:w-auto md:mb-0 md:mr-4 hover:bg-red-700"
                                 href="/AllCourses"
                             >
                                 See All Courses

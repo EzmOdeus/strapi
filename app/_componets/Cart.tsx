@@ -28,7 +28,7 @@ function Cart() {
                                 <h3 className="text-sm text-gray-900">{item.product.attributes.title}</h3>
                                 <dl className="mt-0.5 space-y-px text-[10px] text-gray-600">
                                     <div>
-                                        <dd className="inline">{item.product.attributes.price}$</dd>
+                                        <dd className="inline">${item.product.attributes.price}</dd>
                                     </div>
                                     <div>
                                         <dd className="inline">{item.product.attributes.category}</dd>

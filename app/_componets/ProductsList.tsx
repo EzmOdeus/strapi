@@ -19,7 +19,7 @@ function ProductsList({ ProductList }: any) {
                         <div>
                             <dt className="sr-only">Price</dt>
 
-                            <dd className="text-sm text-gray-500">{item.attributes.price}$</dd>
+                            <dd className="text-sm text-gray-500">${item.attributes.price}</dd>
                         </div>
 
                         {item.attributes.title ? <div>

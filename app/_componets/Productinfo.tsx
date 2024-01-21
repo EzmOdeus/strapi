@@ -40,7 +40,7 @@ function Productinfo({ product }: any) {
   // console.log(product.attributes.img.data.attributes.url );
   const [prod, setprod] = useState();
   return (
-    <section className="py-10 font-poppins dark:text-white dark:bg-gray-800">
+    <section className="py-10 font-poppins ">
       <div className="max-w-6xl px-4 mx-auto">
         <div className="flex flex-wrap mb-24 -mx-4">
           <div className="w-full px-4 mb-8 md:w-1/2 md:mb-0">
@@ -61,11 +61,11 @@ function Productinfo({ product }: any) {
           <div className="w-full px-4 md:w-1/2">
             <div className="lg:pl-6">
               <div className="mb-6 ">
-                <span className="px-2.5 py-0.5 text-xs text-blue-600 bg-blue-100 dark:bg-gray-700 rounded-xl dark:text-gray-200">
+                <span className="px-2.5 py-0.5 text-xs text-blue-600 bg-blue-100 rounded-xl">
                   {product?.attributes?.category}
                 </span>
                 {product?.attributes?.title ? (
-                  <h2 className="max-w-xl mt-6 mb-6 text-xl font-semibold leading-loose tracking-wide text-gray-700 md:text-2xl dark:text-gray-300">
+                  <h2 className="max-w-xl mt-6 mb-6 text-xl font-semibold leading-loose tracking-wide text-gray-700 md:text-2xl ">
                     {product?.attributes?.title}
                   </h2>
                 ) : (
@@ -83,7 +83,7 @@ function Productinfo({ product }: any) {
                           width={16}
                           height={16}
                           fill="currentColor"
-                          className="w-4 mr-1  text-red-500 dark:text-gray-400 bi bi-star "
+                          className="w-4 mr-1  text-red-500 bi bi-star "
                           viewBox="0 0 16 16"
                         >
                           <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path>
@@ -97,7 +97,7 @@ function Productinfo({ product }: any) {
                           width={16}
                           height={16}
                           fill="currentColor"
-                          className="w-4 mr-1 text-red-500  dark:text-gray-400 bi bi-star "
+                          className="w-4 mr-1 text-red-500   bi bi-star "
                           viewBox="0 0 16 16"
                         >
                           <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path>
@@ -111,7 +111,7 @@ function Productinfo({ product }: any) {
                           width={16}
                           height={16}
                           fill="currentColor"
-                          className="w-4 mr-1 text-red-500 dark:text-gray-400 bi bi-star "
+                          className="w-4 mr-1 text-red-500  bi bi-star "
                           viewBox="0 0 16 16"
                         >
                           <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path>
@@ -125,7 +125,7 @@ function Productinfo({ product }: any) {
                           width={16}
                           height={16}
                           fill="currentColor"
-                          className="w-4 mr-1 text-red-500 dark:text-gray-400 bi bi-star "
+                          className="w-4 mr-1 text-red-500  bi bi-star "
                           viewBox="0 0 16 16"
                         >
                           <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path>
@@ -135,26 +135,26 @@ function Productinfo({ product }: any) {
                   </ul>
                 </div>
                 {product?.attributes?.price ? (
-                  <p className="inline-block text-2xl font-semibold text-gray-700 dark:text-gray-400 ">
-                    <span> {product?.attributes?.price}$</span>
+                  <p className="inline-block text-2xl font-semibold text-gray-700  ">
+                    <span> ${product?.attributes?.price}</span>
                   </p>
                 ) : (
                   <Skeleton />
                 )}
               </div>
               <div className="mb-6">
-                <h2 className="mb-2 text-lg font-bold text-gray-700 dark:text-gray-400">
+                <h2 className="mb-2 text-lg font-bold text-gray-700 ">
                   Description:
                 </h2>
-                <div className="bg-gray-100 dark:bg-gray-700 rounded-xl">
+                <div className="bg-gray-100  rounded-xl">
                   <div className="p-3 lg:p-5 ">
-                    <div className="p-2 rounded-xl  lg:p-6 dark:bg-gray-800 bg-gray-50">
+                    <div className="p-2 rounded-xl  lg:p-6  bg-gray-50">
                       <div>
                         <div>
                           {product?.attributes?.description ? (
                             <span className="text-[20px] block">
                               {product?.attributes?.description.map((item: any) =>
-                                item.children.map((text: any) => text.text)
+                                item.children.map((text: any) => <span>{text.text} <br/></span>)
                               )}
                             </span>
                           ) : (
@@ -166,8 +166,8 @@ function Productinfo({ product }: any) {
                   </div>
                 </div>
               </div>
-              <div className="py-6 flex items-center justify-between mb-6 border-t border-b border-gray-200 dark:border-gray-700">
-                <span className="text-base flex text-gray-600 dark:text-white">
+              <div className="py-6 px-6 flex items-center justify-between mb-6 border-t border-b border-gray-200">
+                <span className=" justify-center items-center text-xl flex text-gray-600 ">
                   <svg
                     fill="#952833"
                     width="20px"
@@ -189,11 +189,11 @@ function Productinfo({ product }: any) {
                     </g>
                   </svg>
 
-                  {product?.attributes?.Hours}
+                  {product?.attributes?.Hours} Hours
                 </span>
-                <p className=" text-sm flex text-blue-500 dark:text-blue-200">
+                <p className="items-center justify-center text-sm flex text-blue-500">
                   <svg
-                    
+
                     width="20px"
                     height="20px"
                     viewBox="0 0 24 24"
@@ -228,66 +228,42 @@ function Productinfo({ product }: any) {
                     </g>
                   </svg>
 
-                  <span className="text-gray-600 dark:text-white">
+                  <span className="text-gray-600 text-xl ">
                     {product?.attributes?.category}
                   </span>
                 </p>
               </div>
               <div className="mb-6 " />
-              <div className="flex flex-wrap items-center mb-6">
-                <div className="mb-4 mr-4 lg:mb-0">
-                  <div className="w-28">
-                    <div className="relative flex flex-row w-full h-10 bg-transparent rounded-lg">
-                      <button className="w-20 h-full text-gray-600 bg-gray-100 border-r rounded-l outline-none cursor-pointer dark:border-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 hover:text-gray-700 dark:bg-gray-900 hover:bg-gray-300">
-                        <span className="m-auto text-2xl font-thin">-</span>
-                      </button>
-                      <input
-                        type="number"
-                        className="flex items-center w-full font-semibold text-center text-gray-700 placeholder-gray-700 bg-gray-100 outline-none dark:text-gray-400 dark:placeholder-gray-400 dark:bg-gray-900 focus:outline-none text-md hover:text-black"
-                        placeholder="1"
-                      />
-                      <button className="w-20 h-full text-gray-600 bg-gray-100 border-l rounded-r outline-none cursor-pointer dark:border-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 dark:bg-gray-900 hover:text-gray-700 hover:bg-gray-300">
-                        <span className="m-auto text-2xl font-thin">+</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div className="mb-4 lg:mb-0">
-                  <button className="flex items-center justify-center w-full h-10 p-2 mr-4 text-gray-700 border border-gray-300 lg:w-11 hover:text-gray-50 dark:text-gray-200 dark:border-blue-600 hover:bg-blue-600 hover:border-blue-600 dark:bg-blue-600 dark:hover:bg-blue-500 dark:hover:border-blue-500 dark:hover:text-gray-100">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={16}
-                      height={16}
-                      fill="currentColor"
-                      className=" bi bi-heart"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-                    </svg>
-                  </button>
-                </div>
+              <div className="flex flex-wrap justify-center items-center mb-6">
+
+
                 <button
                   onClick={() => handelAddTocart()}
-                  className="w-full px-4 py-3 text-center text-blue-600 bg-blue-100 border border-blue-600 dark:hover:bg-gray-900 dark:text-gray-400 dark:border-gray-700 dark:bg-gray-700 hover:bg-blue-600 hover:text-gray-100 lg:w-1/2 rounded-xl"
+                  className="w-full px-4 py-3 text-center text-forth bg-primary border border-primary hover:bg-priborder-primary hover:text-gray-100 lg:w-1/2 rounded-xl"
                 >
                   Add to cart
                 </button>
               </div>
-              <div className="flex gap-4 mb-6">
-                <a
-                  href="#"
-                  className="w-full px-4 py-3 text-center text-gray-100 bg-blue-600 border border-transparent dark:border-gray-700 hover:border-blue-500 hover:text-blue-700 hover:bg-blue-100 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-900 rounded-xl"
-                >
-                  Buy now
-                </a>
-              </div>
+
             </div>
           </div>
         </div>
       </div>
-      Similar Courses
-      <hr className="border-[2px] border-[#aaa3]" />
-      {/* <Similarcourses/> */}
+      <span className="relative flex justify-center items-center ">
+        <div
+          className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
+        >
+
+        </div>
+
+        <div  className="flex justify-center items-center">
+          <span className="relative z-10 bg-white text-3xl font-semibold "> Similar Courses</span>
+        
+        </div>
+      </span>
+     
+    
+ 
     </section>
   );
 }
