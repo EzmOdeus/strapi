@@ -9,6 +9,7 @@ import { Cartcontext } from "../_context/Cartcontext";
 // import Similarcourses from "./Similarcourses";
 
 function Productinfo({ product }: any) {
+  let i = 0
   const { cart, setCart }: any = useContext(Cartcontext);
   const { user } = useUser();
   const router = useRouter();
@@ -153,8 +154,9 @@ function Productinfo({ product }: any) {
                         <div>
                           {product?.attributes?.description ? (
                             <span className="text-[20px] block">
-                              {product?.attributes?.description.map((item: any) =>
-                                item.children.map((text: any) => <span>{text.text} <br/></span>)
+                              {
+                                product?.attributes?.description.map((item: any) =>
+                                item.children.map((text: any) => <span key={i++}>{text.text} <br/></span>)
                               )}
                             </span>
                           ) : (
