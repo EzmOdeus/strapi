@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import React from 'react'
 
-function page() {
+function  Thanksorder() {
     const searchParams = useSearchParams()
     const { user } = useUser();
     const date = new Date();
@@ -107,4 +107,4 @@ function page() {
     )
 }
 
-export default page
+export default Thanksorder
